@@ -15,6 +15,7 @@ function App() {
   const taskNodes = tasks.map((task, index) => {
     return(
       <>
+      <span className="container">
       <li key={index} className={task.isDone ? "done" : "not-done"}>
         <span> {task.name} </span>
         {task.isDone ? <span className="done">Done!</span> :
@@ -30,6 +31,7 @@ function App() {
       <li key={index} className="delete-button">
         <button onClick={() => deleteTask(index)}>Delete?</button>
       </li>
+      </span>
       </>
     );
   });
@@ -66,10 +68,10 @@ function App() {
 
   return (
     <>
+    <body>
     <div className="App">
       <h1>Task List!</h1>
-      <hr></hr>
-
+      
       <ul>
         {taskNodes}
       </ul>
@@ -80,6 +82,7 @@ function App() {
         <input type="submit" value="Save New Task"/>
       </form>
     </div>
+    </body>
     </>
 
   );

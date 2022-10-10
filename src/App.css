@@ -2,17 +2,36 @@
   text-align: center;
 }
 
-ul {
+body {
   margin: 0;
+  background-color:darksalmon;
+}
+
+h1 {
+  margin: 0;
+  padding: 36px;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.container {
+  border: 2px solid black;
+  display: flex;
+}
+
+ul {
+  margin: 100px;
   padding: 0;
   list-style-type: none;
 }
 
 li {
-  margin: 20px 0;
+  margin: 20px;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 li span {
@@ -22,17 +41,29 @@ li span {
 li button {
   background: red;
   color: white;
-  border: none;
+  border: 2px solid black;
   padding: 10px;
   cursor: pointer;
 }
 
 li.done {
-  border: 2px solid green;
+  border: 2px solid black;
+  background-color: green;
+  color: limegreen;
 }
 
 li.not-done {
-  border: 2px solid red;
+  border: 2px solid black;
+  background-color: red;
+  color:black;
+}
+
+li.high {
+  padding: 1px;
+  background: yellow;
+  border: 2px solid black;
+
+
 }
 
 input[type="text"] {
